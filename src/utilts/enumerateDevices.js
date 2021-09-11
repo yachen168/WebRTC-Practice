@@ -6,10 +6,9 @@ export const listDevices = async ({ kind }) => {
 
   try {
     const devices = await navigator.mediaDevices.enumerateDevices();
-    console.log("devices", devices);
     const specificDevices = devices
       .filter((device) => device.kind === kind)
-      .map((item, index) => ({
+      .map((item) => ({
         deviceId: item.deviceId,
         groupId: item.groupId,
         kind: item.kind,
