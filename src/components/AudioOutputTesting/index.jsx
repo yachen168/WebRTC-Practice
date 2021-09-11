@@ -62,6 +62,7 @@ export default function AudioOutputTesting() {
           ref={audioOutputRef}
           src="https://www.w3schools.com/html/horse.ogg"
           playsInline
+          loop
           controls
         />
       </div>
