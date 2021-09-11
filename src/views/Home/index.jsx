@@ -35,21 +35,29 @@ export default function Home() {
   };
 
   return (
-    <div className="p-grid p-dir-col p-align-center">
-      <div className="p-col-12 p-md-8 p-lg-5">
-        <Card title={webcamSectionCardTitle}>
-          <WebcamTesting />
-        </Card>
+    <div className={styles.homePage}>
+      <div className={styles.hint}>
+        <span>
+          <i className="pi pi-info-circle" /> This website needs access to your
+          camera and microphone.
+        </span>
       </div>
-      <div className="p-col-12 p-md-8 p-lg-5">
-        <Card title={audioOutputSectionCardTitle}>
-          <AudioOutputTesting />
-        </Card>
-      </div>
-      <div className="p-col-12 p-md-8 p-lg-5">
-        <Card title={audioInputSectionCardTitle}>
-          <AudioInputTesting />
-        </Card>
+      <div className="p-grid p-dir-col p-align-center">
+        <div className="p-col-12 p-md-8 p-lg-5">
+          <Card title={webcamSectionCardTitle}>
+            <WebcamTesting />
+          </Card>
+        </div>
+        <div className="p-col-12 p-md-8 p-lg-5">
+          <Card title={audioOutputSectionCardTitle}>
+            <AudioOutputTesting />
+          </Card>
+        </div>
+        <div className="p-col-12 p-md-8 p-lg-5">
+          <Card title={audioInputSectionCardTitle}>
+            <AudioInputTesting />
+          </Card>
+        </div>
       </div>
     </div>
   );
