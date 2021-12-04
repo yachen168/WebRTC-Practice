@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./views/Home";
+import QueryingMediaDevices from "./views/QueryingMediaDevices";
 import styles from "./app.module.scss";
 
 const App = () => {
   return (
     <div className={styles.app}>
-      <Home />
+      <QueryingMediaDevices />
     </div>
   );
 };
